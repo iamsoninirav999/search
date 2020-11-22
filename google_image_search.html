@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Google Image Search</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <style>
+           #search { 
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }   
+        </style>
+    </head>
+
+    <body>
+
+        <div style="margin: 30px;">
+            <a href="index.html" class="float-right">Go Back to Google Search</a><br>
+        </div>
+    
+        
+        <div id="search">
+            <center><img src="image.png" alt="Google" style="width:250px;"></center>
+            <form action="https://www.google.com/search" class="form-group">
+                <input type="hidden" name="tbm" value="isch">
+                <input type="text" name="q" style="width:350px;line-height: 35px; border-radius: 10px; margin-top:3px; "class="form-control">     
+                <center><input type="submit" value="Google Image Search" style="margin-top: 8px;" class="btn btn-light"></center>
+            </form>
+        </div>
+        
+    </body>
+</html>
